@@ -11,7 +11,7 @@
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
 		<link rel='icon' href="images/icon-256x256.png" sizes="256x256" type="image/png" />
 		<link rel='apple-touch-icon-precomposed' href="images/icon-256x256.png" />
-		<link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen" />
@@ -19,7 +19,7 @@
 	<body>
 		<header>
 			<div class="header-container">
-				<div id="menu-button">MENU</div>
+				<div id="menu-button"><i class="fa fa-bars"></i></div>
 				<span class="site-logo"><img src="images/logo.png" /></span><span class="site-name">Budget Fit</span>
 				<nav>
 					<ul>
@@ -31,10 +31,10 @@
 		</header>
 		<main>
 			<div class="container">
-				<h1>Simple Web Design Budget Calculator</h1>
+				<h1>A Simple Web Development Budget Calculator</h1>
 				<div class="column column-first">
 					<p><i class="fa fa-clock-o"></i> Fill out the estimated hours per task and the hourly rate.</p>
-					<p><i class="fa fa-plus"></i> Add custom tasks</p>
+					<p><i class="fa fa-plus"></i> Add custom tasks.</p>
 					<p><i class="fa fa-file-pdf-o"></i> Output your budget as a PDF.</p>
 				</div>
 				<div class="column column-second">

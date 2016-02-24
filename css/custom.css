@@ -9,7 +9,7 @@
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, pre, blockquote, cite, table {
-	margin-bottom: 0.4em;
+	margin-bottom: 1em;
 }
 
 ul, ol, li {
@@ -51,13 +51,25 @@ body {
 
 /* Common Tags */
 h1, h2, h3 {
-	font-family: Vollkorn;
     font-weight: 400;
     letter-spacing: 1px;
 }
 
 h1 {
-    font-size: 2.4em;
+    font-size: 1.8em;
+	clear: both;
+	font-family: 'Roboto Slab';
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+}
+
+@media (min-width: 768px) {
+	
+	h1 {
+		font-size: 3.4em;
+		width: 75%;
+		text-shadow: 2px 2px 0 rgba(0,0,0,0.15);
+	}
+	
 }
 
 h2 {
@@ -127,17 +139,35 @@ header {
 }
 
 .site-logo img {
-	width: 100px;
+	width: 70px;
 	max-width: 100%;
+}
+
+@media (min-width: 768px) {
+	
+	.site-logo img {
+		width: 100px;
+	}
+	
 }
 
 .site-name {
 	float: left;
     margin-left: 25px;
-    margin-top: 20px;
+    margin-top: 10px;
     bottom: 30px;
-    font-size: 3em;
-	color: #326627;
+    font-size: 1.8em;
+	color: #333;
+	font-family: 'Roboto Slab';
+}
+
+@media (min-width: 768px) {
+	
+	.site-name {
+		font-size: 3em;
+		margin-top: 20px;
+	}
+	
 }
 
 /* Nav */
@@ -187,8 +217,12 @@ nav a {
 #menu-button {
 	display: block;
 	position: absolute;
-	right: 10px;
-	top: 40px;
+	right: 30px;
+	top: 24px;
+}
+
+#menu-button .fa {
+    font-size: 2.2em;
 }
 
 @media (min-width: 768px) {
@@ -204,7 +238,15 @@ nav a {
 	width: 1000px;
 	max-width: 100%;
 	padding: 15px;
-	margin: 110px auto 0 auto;
+	margin: 75px auto 0 auto;
+}
+
+@media (min-width: 768px) {
+	
+	.container {
+		margin: 110px auto 0 auto;
+	}
+	
 }
 
 .column {
@@ -226,7 +268,7 @@ nav a {
 @media (min-width: 768px) {
 	
 	.column-first, .column-second {
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 
 	.column-first {
@@ -235,7 +277,7 @@ nav a {
 
 	.column-second {
 		width: 65%;
-		padding-left: 30px;
+		padding-left: 70px;
 	}
 	
 }
