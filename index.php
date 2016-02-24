@@ -42,51 +42,35 @@
 					<span class="form-col-title fct1">Tasks</span>
 					<span class="form-col-title fct2">Rates</span>
 					<span class="form-col-title fct3">Costs</span>
-						<div class="task">
-							<input class="task-name" type="text" name="task-name-1" value="Initial Design" />
-							<input class="task-rate" type="text" name="task-rate-1" value="$0" />
-							<span class="task-cost">$0</span>
-						</div>
-						<div class="task">
-							<input class="task-name" type="text" name="task-name-2" value="Design Changes" />
-							<input class="task-rate" type="text" name="task-rate-2" value="$0" />
-							<span class="task-cost">$0</span>
-						</div>
-						<div class="task">
-							<input class="task-name" type="text" name="task-name-3" value="Front-End Development" />
-							<input class="task-rate" type="text" name="task-rate-3" value="$0" />
-							<span class="task-cost">$0</span>
-						</div>
-						<div class="task">
-							<input class="task-name" type="text" name="task-name-3" value="Back-End Development" />
-							<input class="task-rate" type="text" name="task-rate-3" value="$0" />
-							<span class="task-cost">$0</span>
-						</div>
-						<div class="task">
-							<input class="task-name" type="text" name="task-name-3" value="Database Development" />
-							<input class="task-rate" type="text" name="task-rate-3" value="$0" />
-							<span class="task-cost">$0</span>
-						</div>
-						<div class="task">
-							<input class="task-name" type="text" name="task-name-3" value="Testing" />
-							<input class="task-rate" type="text" name="task-rate-3" value="$0" />
-							<span class="task-cost">$0</span>
-						</div>
-						<div class="task">
-							<input class="task-name" type="text" name="task-name-3" value="Copy &amp; Content" />
-							<input class="task-rate" type="text" name="task-rate-3" value="$0" />
-							<span class="task-cost">$0</span>
-						</div>
-						<div class="task">
-							<input class="task-name" type="text" name="task-name-3" value="Photography &amp; Images" />
-							<input class="task-rate" type="text" name="task-rate-3" value="$0" />
-							<span class="task-cost">$0</span>
-						</div>
-						<div class="task">
-							<input class="task-name" type="text" name="task-name-3" value="Client Meetings" />
-							<input class="task-rate" type="text" name="task-rate-3" value="$0" />
-							<span class="task-cost">$0</span>
-						</div>
+						
+						<?php
+							
+							$taskNum = 1;
+							$defaultTasks = array(
+													"Initial&nbsp;Design",
+													"Design&nbsp;Changes",
+													"Front-End&nbsp;Development",
+													"Back-End&nbsp;Development",
+													"Database&nbsp;Development",
+													"Testing",
+													"Copy&nbsp;&amp;&nbsp;Content",
+													"Photography&nbsp;&amp;&nbsp;Images",
+													"Client&nbsp;Meetings"
+											);
+						
+							foreach ($defaultTasks as $dTask) {
+							
+								echo "<div class='task'>\r\n";
+								echo "<input class='task-name' type='text' name='task-name-" . $taskNum . "' value=" . $dTask . " />\r\n";
+								echo "<input class='task-rate' type='text' name='task-rate-" . $taskNum . "' value='$0' />\r\n";
+								echo "<span class='task-cost'>$0</span>\r\n";
+								echo "</div>\r\n";
+								$taskNum++;
+							
+							}
+						
+						?>
+						
 						<button type="submit" name="submit">
 							<i class="fa fa-file-pdf-o"></i> Output to PDF
 						</button>

@@ -314,6 +314,7 @@ input, select, textarea {
     font-size: 1.2em;
     padding: 6px 8px;
 	margin: 0;
+	font-family: Lato;
 }
 
 button {
@@ -374,6 +375,20 @@ button .fa {
 	margin-right: 4px;
     font-size: 1.2em;
     padding: 6px 8px;
+}
+
+.add-task {
+	font-size: 1.2em;
+	width: 100%;
+	margin-botom: 1em;
+}
+
+.add-task span {
+	padding: 4px 8px;
+}
+
+.add-task .fa {
+	margin-right: 4px;
 }
 
 .disclaimer {
