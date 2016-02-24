@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Budget Fit - A Quick Web Design Budget Calculator</title>	
+		<title>Budget Fit - A Quick Web Design Budget Estimator</title>	
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="author" content="DaveJudd.com">
@@ -31,7 +31,7 @@
 		</header>
 		<main>
 			<div class="container">
-				<h1>A Simple Web Development Budget Calculator</h1>
+				<h1>A Simple Web Development Budget Estimator</h1>
 				<div class="column column-first">
 					<p><i class="fa fa-clock-o"></i> Fill out the estimated hours per task and the hourly rate.</p>
 					<p><i class="fa fa-plus"></i> Add custom tasks.</p>
@@ -39,7 +39,24 @@
 				</div>
 				<div class="column column-second">
 					<form action="" method="post">
-						<input type="text" name="task1" />
+					<span class="form-col-title fct1">Tasks</span>
+					<span class="form-col-title fct2">Rates</span>
+					<span class="form-col-title fct3">Costs</span>
+						<div class="task">
+							<input class="task-name" type="text" name="task-name-1" value="Initial Design" />
+							<input class="task-rate" type="text" name="task-rate-1" value="$0" />
+							<span class="task-cost">$0</span>
+						</div>
+						<div class="task">
+							<input class="task-name" type="text" name="task-name-2" value="Design Changes" />
+							<input class="task-rate" type="text" name="task-rate-2" value="$0" />
+							<span class="task-cost">$0</span>
+						</div>
+						<div class="task">
+							<input class="task-name" type="text" name="task-name-3" value="Database Design" />
+							<input class="task-rate" type="text" name="task-rate-3" value="$0" />
+							<span class="task-cost">$0</span>
+						</div>
 						<button type="submit" name="submit">
 							<i class="fa fa-file-pdf-o"></i> Output to PDF
 						</button>

@@ -308,8 +308,11 @@ nav a {
 }
 
 /* Calculator */
-input {
+input, select, textarea {
 	width: 100%;
+    font-size: 1.2em;
+    padding: 6px 8px;
+	margin: 0;
 }
 
 button {
@@ -328,4 +331,46 @@ button {
 button .fa {
 	padding-right: 2px;
 	font-size: 1.6em;
+}
+
+.form-col-title {
+	display: inline-block;
+	margin-right: 4px;
+    font-size: 1.4em;
+    font-family: 'Roboto Slab';
+    margin-bottom: 0.8em;
+}
+
+.fct1 {
+	width: 50%;
+}
+
+.fct2 {
+	width: 12%;
+}
+
+.fct3 {
+	width: 20%;
+}
+
+.task {
+	margin-bottom: 4px;
+}
+
+.task-name {
+	width: 50%;
+	margin-right: 4px;
+}
+
+.task-rate {
+	width: 12%;
+	margin-right: 4px;
+}
+
+.task-cost {
+	display: inline-block;
+	width: 20%;
+	margin-right: 4px;
+    font-size: 1.2em;
+    padding: 6px 8px;
 }
