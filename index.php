@@ -73,6 +73,11 @@
 							<span class="task-cost">$0</span>
 						</div>
 						<div class="task">
+							<input class="task-name" type="text" name="task-name-3" value="Copy &amp; Content" />
+							<input class="task-rate" type="text" name="task-rate-3" value="$0" />
+							<span class="task-cost">$0</span>
+						</div>
+						<div class="task">
 							<input class="task-name" type="text" name="task-name-3" value="Photography &amp; Images" />
 							<input class="task-rate" type="text" name="task-rate-3" value="$0" />
 							<span class="task-cost">$0</span>
