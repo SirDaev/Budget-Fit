@@ -39,6 +39,8 @@
 				</div>
 				<div class="column column-second">
 					<form action="" method="post">
+					<span class="form-col-title">Project Name</span>
+					<input class="project-name" type="text" name="project-name" placeholder="My Project" />
 					<span class="form-col-title fct1">Tasks</span>
 					<span class="form-col-title fct2">Rates</span>
 					<span class="form-col-title fct3">Costs</span>
@@ -62,7 +64,7 @@
 							
 								echo "<div class='task'>\r\n";
 								echo "<input class='task-name' type='text' name='task-name-" . $taskNum . "' value=" . $dTask . " />\r\n";
-								echo "<input class='task-rate' type='text' name='task-rate-" . $taskNum . "' value='$0' />\r\n";
+								echo "<input class='task-rate' type='text' name='task-rate-" . $taskNum . "' value='0' />\r\n";
 								echo "<span class='task-cost'>$0</span>\r\n";
 								echo "</div>\r\n";
 								$taskNum++;
@@ -71,6 +73,8 @@
 						
 						?>
 						
+						<div id="add-task"><i class="fa fa-plus"></i> Add a Task</div>
+						<span class="form-col-title">Total Cost: <span id="total-cost"></span></span>
 						<button type="submit" name="submit">
 							<i class="fa fa-file-pdf-o"></i> Output to PDF
 						</button>

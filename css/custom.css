@@ -308,7 +308,7 @@ nav a {
 }
 
 /* Calculator */
-input, select, textarea {
+input, select, textarea  {
 	width: 100%;
     font-size: 1.2em;
     padding: 6px 8px;
@@ -323,10 +323,11 @@ button {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 1.4em;
     margin: 4px 2px;
     cursor: pointer;
+	width: 100%;
 }
 
 button .fa {
@@ -376,18 +377,21 @@ button .fa {
     padding: 6px 8px;
 }
 
-.add-task {
-	font-size: 1.2em;
+
+#add-task {
 	width: 100%;
-	margin-botom: 1em;
+    font-size: 1.2em;
+    padding: 6px 8px;
+	margin-bottom: 1em;
+	font-family: Lato;
 }
 
-.add-task span {
-	padding: 4px 8px;
-}
-
-.add-task .fa {
+#add-task .fa {
 	margin-right: 4px;
+}
+
+input.project-name {
+	margin-bottom: 1em;
 }
 
 .disclaimer {
@@ -405,7 +409,7 @@ label {
     margin-bottom: 0.2em;
 }
 
-#contact-form input, #contact-form textarea, #contact-form button {
+#contact-form input, #contact-form textarea {
     width: 400px;
     max-width: 100%;
 	margin-bottom: 1.5em;
