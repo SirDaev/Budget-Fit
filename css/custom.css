@@ -82,7 +82,7 @@ h3 {
 
 p {
     font-size: 1.4em;
-	margin-bottom: 0.75em;
+	margin-bottom: 1.2em;
 }
 
 /* Links */
@@ -394,4 +394,20 @@ button .fa {
 	margin-top: 30px;
 	text-align: center;
 	font-size: 1em;
+}
+
+/* Contact Form */
+label {
+	display: block;
+	width: 100%;
+    font-size: 1.4em;
+    font-family: 'Roboto Slab';
+    margin-bottom: 0.2em;
+}
+
+#contact-form input, #contact-form textarea, #contact-form button {
+    width: 400px;
+    max-width: 100%;
+	margin-bottom: 1.5em;
+    display: block;
 }
