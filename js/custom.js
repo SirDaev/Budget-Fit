@@ -16,6 +16,7 @@ $("#add-task").click(function() {
 		"<div class='task'>" +
 		"<input class='task-name' type='text' name='task-name-" + taskNum + "' value='' />\r\n" +
 		"<input class='task-rate' type='text' name='task-rate-" + taskNum + "' value='0' />\r\n" +
+		"<input class='task-hours' type='text' name='task-hours-" + taskNum + "' value='0' />\r\n" +
 		"<span class='task-cost'>$0</span>\r\n" +
 		"</div>\r\n");
 });
