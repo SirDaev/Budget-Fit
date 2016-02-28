@@ -34,7 +34,7 @@
 				<h1>What is Budget Fit?</h1>
 				<p>I originally designed Budget Fit to assist me with the cost estimation of some of my more simple web development projects. It seems to work quite well for this purpose, and I hope others find success using it too!</p>
 				<p>Created by Dave Judd. <a href="http://www.davejudd.com/" target="_blank">www.davejudd.com</a></p>
-				<p>Budget Fit uses an amazing tool called <a href="http://www.mpdf1.com/mpdf/index.php" target="_blank">mPDF</a> to generate dynamic PDF documents. A big thank you goes to Ian Back for a great product!</p>
+				<p>Budget Fit uses an amazing tool called <a href="https://github.com/mpdf/mpdf" target="_blank">mPDF</a> to generate dynamic PDF documents. A big thank you goes to Ian Back for an awesome product!</p>
 			</div>
 		</main>
 		<footer>
