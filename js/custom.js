@@ -14,7 +14,7 @@ $("#add-task").click(function() {
 	//Append a new task with appropriate numbers
 	$("#tasks").append(
 		"<div class='task'>" +
-		"<input class='task-name' type='text' name='task-name-" + taskNum + "' value='' />\r\n" +
+		"<input class='task-name' type='text' name='task-name-" + taskNum + "' value='New Task' />\r\n" +
 		"<input class='task-rate' type='text' name='task-rate-" + taskNum + "' value='0' />\r\n" +
 		"<input class='task-hours' type='text' name='task-hours-" + taskNum + "' value='0' />\r\n" +
 		"<span class='task-cost'>$0</span>\r\n" +
@@ -22,7 +22,7 @@ $("#add-task").click(function() {
 });
 
 //When a task rate is changed...
-$("input.task-rate").bind("change paste keyup", function() {
+$("form#budget-calculator").on("change paste keyup", "input.task-rate", function() {
 	
 	//1. Calc the cost for that task
 	var taskSum = $(this).val() * $(this).siblings("input.task-hours").val();
@@ -42,7 +42,7 @@ $("input.task-rate").bind("change paste keyup", function() {
 });
 
 //When a task's hours is changed...
-$("input.task-hours").bind("change paste keyup", function() {
+$("form#budget-calculator").on("change paste keyup", "input.task-hours", function() {
 	
 	//1. Calc the cost for that task
 	var taskSum = $(this).val() * $(this).siblings("input.task-rate").val();
