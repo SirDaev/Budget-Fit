@@ -38,6 +38,7 @@
 					<p><i class="fa fa-file-pdf-o"></i> Output your budget as a PDF.</p>
 				</div>
 				<div class="column column-second">
+<<<<<<< HEAD
 					<form id="budget-calculator" action="" method="post">
 						<span class="form-col-title">Project Name</span>
 						<input class="project-name" type="text" name="project-name" placeholder="My Project" />
@@ -45,6 +46,14 @@
 						<span class="form-col-title fct2">Rate</span>
 						<span class="form-col-title fct3">Hours</span>
 						<span class="form-col-title fct4">Cost</span>
+=======
+					<form action="" method="post">
+						<span class="form-col-title">Project Name</span>
+						<input class="project-name" type="text" name="project-name" placeholder="My Project" />
+						<span class="form-col-title fct1">Tasks</span>
+						<span class="form-col-title fct2">Rates</span>
+						<span class="form-col-title fct3">Costs</span>
+>>>>>>> origin/master
 						<div id="tasks">	
 						<?php
 							
@@ -66,7 +75,10 @@
 								echo "<div class='task'>\r\n";
 								echo "<input class='task-name' type='text' name='task-name-" . $taskNum . "' value=" . $dTask . " />\r\n";
 								echo "<input class='task-rate' type='text' name='task-rate-" . $taskNum . "' value='0' />\r\n";
+<<<<<<< HEAD
 								echo "<input class='task-hours' type='text' name='task-hours-" . $taskNum . "' value='0' />\r\n";
+=======
+>>>>>>> origin/master
 								echo "<span class='task-cost'>$0</span>\r\n";
 								echo "</div>\r\n";
 								$taskNum++;
