@@ -23,6 +23,39 @@ $("#add-task").click(function() {
 //When a task rate is changed...
 $("input.task-rate").bind("change paste keyup", function() {
 	
+	//1. Calc the cost for that task
+	var taskSum = $(this).val() * $(this).siblings("input.task-hours").val();
+	$(this).siblings(".task-cost").text("$" + taskSum);
+	
+	//2. Calc the total cost
+	var totalSum = 0;
+	$('.task').each(function() {
+		var oneTaskSum = $(this).children(".task-rate").val() * $(this).children(".task-hours").val();
+		totalSum += oneTaskSum;
+		
+	});
+	
+	//3. Output the total cost
+	$("#total-cost").text("$" + totalSum)
+	
+});
 
+//When a task's hours is changed...
+$("input.task-hours").bind("change paste keyup", function() {
+	
+	//1. Calc the cost for that task
+	var taskSum = $(this).val() * $(this).siblings("input.task-rate").val();
+	$(this).siblings(".task-cost").text("$" + taskSum);
+	
+	//2. Calc the total cost
+	var totalSum = 0;
+	$('.task').each(function() {
+		var oneTaskSum = $(this).children(".task-rate").val() * $(this).children(".task-hours").val();
+		totalSum += oneTaskSum;
+		
+	});
+	
+	//3. Output the total cost
+	$("#total-cost").text("$" + totalSum)
 	
 });
