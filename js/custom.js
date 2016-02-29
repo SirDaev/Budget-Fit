@@ -37,7 +37,8 @@ $("form#budget-calculator").on("change paste keyup", "input.task-rate", function
 	});
 	
 	//3. Output the total cost
-	$("#total-cost").text("$" + totalSum)
+	$("#total-cost").text("$" + totalSum);
+	$("#hidden-total").val(totalSum);
 	
 });
 
@@ -58,5 +59,6 @@ $("form#budget-calculator").on("change paste keyup", "input.task-hours", functio
 	
 	//3. Output the total cost
 	$("#total-cost").text("$" + totalSum)
+	$("#hidden-total").val(totalSum);
 	
 });

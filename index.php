@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -38,7 +42,7 @@
 					<p><i class="fa fa-file-pdf-o"></i> Output your budget as a PDF.</p>
 				</div>
 				<div class="column column-second">
-					<form id="budget-calculator" action="" method="post">
+					<form id="budget-calculator" action="PDF.php" method="post">
 						<span class="form-col-title">Project Name</span>
 						<input class="project-name" type="text" name="project-name" placeholder="My Project" />
 						<span class="form-col-title fct1">Task</span>
@@ -77,6 +81,7 @@
 						</div>
 						<div id="add-task"><i class="fa fa-plus"></i> Add a Task</div>
 						<span class="form-col-title">Total Cost: <span id="total-cost"></span></span>
+						<input type="hidden" name="hidden-total" value="" id="hidden-total">
 						<button type="submit" name="submit">
 							<i class="fa fa-file-pdf-o"></i> Output to PDF
 						</button>
