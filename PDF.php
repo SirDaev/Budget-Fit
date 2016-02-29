@@ -3,6 +3,15 @@
 session_start();
 error_reporting(E_ALL & ~E_NOTICE);
 
+//database connection
+include_once "../../config/bf-config.php";
+
+//Increment the number of budgets made
+//Google analytics causes this to run twice (for some reason?)
+//This is why we use .5 instead of 1
+$sql = "UPDATE track_budgets SET number_of_budgets=number_of_budgets+.5 WHERE track_name = 'Number of Budgets Made'";
+$records = mysqli_query($dbConn, $sql);
+
 $html = "<table style='border: none; margin-bottom: 30px; width: 100%;'>
 			<tr>
 				<td style='width: 110px; font-family: sans-serif;'>
