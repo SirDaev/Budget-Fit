@@ -402,3 +402,29 @@ button .fa {
 p.disclaimer {
 	text-align: center;
 }
+
+/* Contact Form */
+#contact-form {
+	width: 500px;
+	max-width: 100%;
+}
+
+#contact-form input, #contact-form textarea {
+	margin-bottom: .7em;
+	margin-top: .2em;
+}
+
+#contact-form label {
+	font-size: 1.4em;
+}
+
+.required {
+    border-left: 3px solid #924B52;
+}
+
+span.required {
+    font-size: 1.1em;
+    padding: 4px 8px;
+    display: block;
+    margin-bottom: .7em;
+}

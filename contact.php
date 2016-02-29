@@ -35,7 +35,6 @@
 					<?php if (!$_POST) { ?>
 						<form method="post" action="" id="contact-form">
 							<div>
-								<label for='required' class="required-label"> </label>
 								<span class="required">= Required</span>
 							</div>
 							<div>
