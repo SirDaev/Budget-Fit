@@ -3,11 +3,7 @@
 session_start();
 error_reporting(E_ALL & ~E_NOTICE);
 
-$html = "<style>
-			
-		</style>";
-
-$html .= "<table style='border: none; margin-bottom: 30px; width: 100%;'>
+$html = "<table style='border: none; margin-bottom: 30px; width: 100%;'>
 			<tr>
 				<td style='width: 110px;'>
 					<img src='http://davejudd.com/client/budget/images/logo.png' style='float: left; vertical-align: middle; width: 110px; height: auto;' />
@@ -27,11 +23,18 @@ $html .= "<table cellpadding='8px' style='border-collapse: collapse;'>
 				<td>";
 
 $counter = 1;
+$dollarSign = "";
 
 foreach ($_POST as $key => $value) {
 	
-	if ($key != 'submit' && $key != 'project-name') {
-		$html .= $value;
+	if ($counter != 1) {
+		$dollarSign = "$";
+	} else {
+		$dollarSign = "";
+	}
+	
+	if (substr( $key, 0, 4 ) === "task") {
+		$html .= $dollarSign . $value;
 		if ($counter === 3) {
 			$html .= "</td></tr><tr><td>";
 			$counter = 1;
@@ -44,7 +47,7 @@ foreach ($_POST as $key => $value) {
 }
 
 if ($counter != 3) {
-	$html .= "last</td></tr>";
+	$html .= "</td><td></td><td>$" . $_POST['hidden-total'] . "</td></tr>";
 }
 $html .= "</table>";
 
