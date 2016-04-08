@@ -7,8 +7,9 @@ error_reporting(E_ALL & ~E_NOTICE);
 include_once "../../config/bf-config.php";
 
 //Increment the number of budgets made
-//Google analytics causes this to run twice (for some reason?)
-//This is why we use .5 instead of 1
+//There is a bug causing this to run twice (for some reason?)
+//This needs to be fixed.
+//We will use .5 instead of 1 (for now)
 $sql = "UPDATE track_budgets SET number_of_budgets=number_of_budgets+.5 WHERE track_name = 'Number of Budgets Made'";
 $records = mysqli_query($dbConn, $sql);
 
