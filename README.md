@@ -6,4 +6,4 @@ Create a simple project estimation and output it as a PDF.
 
 [www.budgetfit.net](http://www.budgetfit.net/)
 
-![](http://www.davejudd.com/images/github/budget-fit/budget-fit.jpg)
+![](http://www.davejudd.com/images/github/budget-fit/budget-fit-1.jpg)
